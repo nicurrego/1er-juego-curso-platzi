@@ -1,0 +1,167 @@
+* {
+    font-family: "Zen Kurenaido", sans-serif;
+    font-style: normal;
+}
+body{
+    background-color: lightgreen;
+}
+h1 {
+    font-size: xx-large;
+    padding: 2px;
+    padding-top: 0%;
+    color: teal;
+    width: auto;
+    background-color: lightcyan;
+    border-radius: 10px;
+}
+h2 {
+    color: teal;
+    font-size: 20px;
+    font-weight: 400;
+        
+}
+section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section #combate {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+label {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid;
+    box-shadow: 0 0 0 3px;
+    margin: 5px;
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+input {
+    display: none;
+}
+input:checked + label{
+    background-color: rgb(184, 19, 19);
+    height: 120px;
+}
+#fondo-boton{
+    background-color: rgb(13, 124, 124);
+    color: rgb(188, 233, 248);
+    font-weight: bold;
+}
+.tarjetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 80%;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+.tarjetas img{
+    width: 80px;
+}
+#boton-seleccionar-pokemon {
+    width: 85px;
+    height: 35px;
+    border-radius: 17px;
+    border: transparent;
+    color: teal;
+    background-color: lightcyan;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#combate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton-de-ataque {
+    justify-content: space-between;
+    width: 85px;
+    height: 50px;
+    border-radius: 17px;
+    border: transparent;
+    color: teal;
+    background-color: lightcyan;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#mensajes{
+    background-color: teal;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 45%;
+    color: aliceblue;
+}
+#reiniciar{
+    display: block;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    padding: 9px;
+    color: teal;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    border-radius: 17px;
+    border: none;
+    color: teal;
+    background-color: lightcyan;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+}
+.padres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#ver-mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+#mapa {
+    margin-bottom: 20px;
+}
+.flechas-personaje{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+}
+.mover-arriba{
+    grid-area: 1/2/1/2;
+}
+.mover-izquierda{
+    grid-area: 2/1/2/1;
+}
+.mover-abajo{
+    grid-area: 2/2/2/2;
+}
+.mover-derecha{
+    grid-area: 2/3/2/3;
+}
+@media (max-width: 360px){
+    .tarjetas {
+        flex-direction: column;
+    }
+}

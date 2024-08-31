@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+        </style>
+        <title>POKEMON</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <section id="ポケモンを選ぶ">
+            <h1>POKEMON!</h1>
+
+            <h2>ポケモンを選んでください</h2>
+
+            <div id='contenedor-tarjetas' class="tarjetas">
+            </div>
+
+            <button id="boton-seleccionar-pokemon">選ぶ</button>
+        </section>
+<!-- 2da sección -->
+        <section id="ver-mapa">
+            <h1 class="titulo">Recorre el mapa con tu pokemon</h1>
+            <canvas id="mapa"></canvas>
+            <div class="flechas-personaje">
+            <div class="mover-arriba">
+                <button
+                ontouchend="detenerMovimiento()" ontouchstart="moverPokemonArriba()"
+                onmouseup="detenerMovimiento()" onmousedown="moverPokemonArriba()">⬆️</button></div>
+            <div class="mover-izquierda">
+                <button
+                ontouchend="detenerMovimiento()" ontouchstart="moverPokemonIzquierda()"
+                onmouseup="detenerMovimiento()" onmousedown="moverPokemonIzquierda()">⬅️</button></div>
+            <div class="mover-abajo">
+                <button
+                ontouchend="detenerMovimiento()" ontouchstart="moverPokemonAbajo()"
+                onmouseup="detenerMovimiento()" onmousedown="moverPokemonAbajo()">⬇️</button></div>
+            <div class="mover-derecha">
+                <button
+                ontouchend="detenerMovimiento()" ontouchstart="moverPokemon()"
+                onmouseup="detenerMovimiento()" onmousedown="moverPokemon()">➡️</button></div>
+            </div>
+        </section>
+        <section id="combate">
+            <h1>POKEMON!</h1>
+
+            <h2>攻撃を選んでください</h2>
+
+            <div id="botones-de-ataque">
+                
+            </div>
+        
+            <!-- <section id="mensajes"> -->
+                <!-- creacion de <p> con JS -->
+            <!-- </section> -->
+
+            <section id="mensajes">
+                <p id="resultado">Ronda de 5 turnos!</p>
+            
+
+            <button id="reiniciar">リスタート</button>
+            </section>
+
+            <div class="ataques">
+                <div class="padres">
+                    <p id="pokemon-jugador"></p>
+                    <p>Victorias</p><p id="vidas-jugador">-</p>
+                    <div id="ataque-del-jugador"></div>
+                </div>
+
+                <div class="padres">
+                    <p id="pokemon-enemigo"></p>
+                    <p>Victorias</p><p id="vidas-enemigo">-</p>
+                    <div id="ataque-del-enemigo"></div>
+                </div>
+            </div>
+
+        </section>
+    <script src="js/pokemon.js"></script>
+    </body>
+</html>
